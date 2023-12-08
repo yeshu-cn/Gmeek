@@ -27,7 +27,7 @@
 <span class="postTitle">{{ blogBase['postTitle'] }}</span>
 <div class="title-right">
 
-    <a href="/"><button id="buttonHome" class="btn btn-invisible circle" title="{{ i18n['home'] }}">
+    <a href="https://yeshu.fun/yeshu.github.io"><button id="buttonHome" class="btn btn-invisible circle" title="{{ i18n['home'] }}">
         <svg class="octicon" width="16" height="16">
             <path id="pathHome" fill-rule="evenodd" d="{{ IconList['home'] }}"></path>
         </svg>
@@ -39,11 +39,11 @@
         </svg>
     </button></a>
 
-    <button class="btn btn-invisible circle" onclick="modeSwitch();" title="{{ i18n['switchTheme'] }}">
+<!--     <button class="btn btn-invisible circle" onclick="modeSwitch();" title="{{ i18n['switchTheme'] }}">
         <svg class="octicon" width="16" height="16" >
             <path id="themeSwitch" fill-rule="evenodd"></path>
         </svg>
-    </button>
+    </button> -->
 
 </div>
 {% endblock %}
@@ -51,9 +51,9 @@
 {% block content %}
 <div class="markdown-body" id="postBody">
 {{ blogBase['postBody'] }}
-</div>
+<!-- </div>
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">{{ i18n['comments'] }}</button>
-<div class="comments" id="comments"></div>
+<div class="comments" id="comments"></div> -->
 {% endblock %}
 
 {% block script %}
